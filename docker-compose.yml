@@ -4,7 +4,7 @@ services:
     # Build the image using the specified Dockefile and context
     build:
       context: .
-      dockerfile: Dockerfile_Main
+      dockerfile: Dockerfile
 
     # Define the image name and tag
     image: devops_app:latest

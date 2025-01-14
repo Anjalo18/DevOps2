@@ -31,5 +31,5 @@ RUN git clone -b dev  https://github.com/Anjalo18/DevOps.git
 COPY run_test.sh .
 RUN chmod +x run_test.sh
 
-# Default command to start the container
-CMD ["sh", "-c", "./run_test.sh"]
+# Default command to run the test first, then the Python application
+CMD ["sh", "-c", "./run_test.sh && python DevOps/mydevopspro.py"]
