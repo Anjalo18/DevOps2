@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Switch to the "dev" branch
-git checkout dev
+#git checkout dev
 
-echo "-----------------------------"
+echo "------------------------------$(date '+%d/%m/%y %H:%M')----------------------------"
+echo "------------------------------Start of tests----------------------------"
 
 # Check Python version to verify its installation
 echo "Running tests, checking Python version..."
@@ -21,7 +22,7 @@ python3 -c "print('Tets passed !')"
 
 # Indicate that the test was successful
 echo "Test passed."
-echo "-------------------------------"
+echo "------------------------------End of tests----------------------------"
 echo "SUCCESS"
 
 #git status
