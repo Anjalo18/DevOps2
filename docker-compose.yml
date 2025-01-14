@@ -1,0 +1,18 @@
+services:
+  app:
+
+    # Build the image using the specified Dockefile and context
+    build:
+      context: .
+      dockerfile: Dockerfile_Main
+
+    # Define the image name and tag
+    image: devops_app:latest
+
+    # Set a custom container name
+    container_name: DevOpsApp
+
+    # Map port 5000 of the container to port 5000 on the host machine
+    ports:
+      - "5000:5000"
+
